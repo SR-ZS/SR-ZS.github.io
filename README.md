@@ -11,11 +11,12 @@ A fancy static personal blog with owner-only publishing.
 ## Content structure
 
 - Post index data: `data/posts.json`
-- Post pages: `posts/<slug>.html`
+- Post content files: `posts/<slug>.md`
+- Post renderer page: `post.html?slug=<slug>`
 
 ## Publish a new post
 
-1. Create `posts/<slug>.html`
+1. Create `posts/<slug>.md`
 2. Add an entry in `data/posts.json`:
 
 ```json

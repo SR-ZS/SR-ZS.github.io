@@ -30,7 +30,7 @@ async function renderPosts() {
         <p class="tag">${post.category || 'General'} • ${post.date || ''}</p>
         <h3>${post.title}</h3>
         <p>${post.excerpt || ''}</p>
-        <a href="posts/${post.slug}.html" class="link-arrow">Read post →</a>
+        <a href="post.html?slug=${encodeURIComponent(post.slug)}" class="link-arrow">Read post →</a>
       </article>
     `
     )
