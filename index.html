@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Blog • SR-ZS</title>
+    <meta
+      name="description"
+      content="A fancy personal blog homepage with featured stories and latest posts."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-blur blur-a"></div>
+    <div class="bg-blur blur-b"></div>
+
+    <header class="site-header">
+      <div class="brand">SR-ZS</div>
+      <nav>
+        <a href="#featured">Featured</a>
+        <a href="#latest">Latest</a>
+        <a href="#about">About</a>
+      </nav>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow">WELCOME TO THE NOTEBOOK</p>
+        <h1>Fancy thoughts, clean code, and stories worth reading.</h1>
+        <p class="subtitle">
+          This is a visual-first blog homepage built for GitHub Pages. You can plug in your real posts later.
+        </p>
+        <a href="#latest" class="cta">Read latest posts</a>
+      </section>
+
+      <section id="featured" class="featured card">
+        <div>
+          <p class="tag">Featured Story</p>
+          <h2>Designing delightful developer experiences</h2>
+          <p>
+            How tiny UI touches, thoughtful docs, and reliable tooling can make products feel magical.
+          </p>
+          <a href="#" class="link-arrow">Read article →</a>
+        </div>
+        <div class="feature-visual" aria-hidden="true"></div>
+      </section>
+
+      <section id="latest">
+        <div class="section-head">
+          <h2>Latest Posts</h2>
+          <span>Updated weekly</span>
+        </div>
+
+        <div class="post-grid">
+          <article class="post card">
+            <p class="tag">Engineering</p>
+            <h3>Building fast, beautiful static websites</h3>
+            <p>Practical patterns for performance and visual polish without heavyweight frameworks.</p>
+            <a href="#" class="link-arrow">Read post →</a>
+          </article>
+
+          <article class="post card">
+            <p class="tag">Productivity</p>
+            <h3>How I plan deep work weeks</h3>
+            <p>A simple system for balancing maker time, meetings, and creative recovery.</p>
+            <a href="#" class="link-arrow">Read post →</a>
+          </article>
+
+          <article class="post card">
+            <p class="tag">Notes</p>
+            <h3>What “fancy” actually means in UI</h3>
+            <p>Fancy isn’t glitter. It’s clarity, rhythm, contrast, and delight used with restraint.</p>
+            <a href="#" class="link-arrow">Read post →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about card">
+        <h2>About this site</h2>
+        <p>
+          A starter layout for a personal blog on GitHub Pages. Swap these placeholders with your own writing whenever you're ready.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SR-ZS. Built for GitHub Pages.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
