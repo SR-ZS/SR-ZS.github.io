@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "building-fast-beautiful-static-websites",
+    "title": "Building fast, beautiful static websites",
+    "category": "Engineering",
+    "excerpt": "Practical patterns for performance and visual polish without heavyweight frameworks.",
+    "date": "2026-02-24"
+  },
+  {
+    "slug": "how-i-plan-deep-work-weeks",
+    "title": "How I plan deep work weeks",
+    "category": "Productivity",
+    "excerpt": "A simple system for balancing maker time, meetings, and creative recovery.",
+    "date": "2026-02-23"
+  }
+]

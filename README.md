@@ -1,23 +1,39 @@
 # Portfolio Blog (GitHub Pages)
 
-A fancy static blog homepage with a built-in writing entrance.
+A fancy static personal blog with owner-only publishing.
 
-## Features
+## Security model
 
-- Fancy homepage layout
-- `Write a post` entrance (`admin.html`)
-- Local post publishing (stored in browser `localStorage`)
-- Single post page (`post.html?id=...`)
+- Site is static on GitHub Pages.
+- No public write/admin endpoint on production.
+- New posts are published only by repo commits (maintainer access required).
 
-## Local preview
+## Content structure
 
-```bash
-python3 -m http.server 8080
+- Post index data: `data/posts.json`
+- Post pages: `posts/<slug>.html`
+
+## Publish a new post
+
+1. Create `posts/<slug>.html`
+2. Add an entry in `data/posts.json`:
+
+```json
+{
+  "slug": "my-new-post",
+  "title": "My new post",
+  "category": "Notes",
+  "excerpt": "Short summary",
+  "date": "2026-02-24"
+}
 ```
 
-Then open `http://localhost:8080`.
+3. Commit and push:
 
-## Notes
+```bash
+git add .
+git commit -m "feat: publish new blog post"
+git push
+```
 
-This version stores posts in each browser's local storage (no backend/database).
-If you want cross-device publishing and permanent content management, next step is adding a static-site CMS flow (e.g. markdown + build, or GitHub API based editor).
+GitHub Pages will rebuild automatically.
