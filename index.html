@@ -35,9 +35,12 @@
         <p class="eyebrow">WELCOME TO THE NOTEBOOK</p>
         <h1>Fancy thoughts, clean code, and stories worth reading.</h1>
         <p class="subtitle">
-          This is a visual-first blog homepage built for GitHub Pages. You can plug in your real posts later.
+          This is a visual-first blog homepage built for GitHub Pages. You can now publish posts from the Write page.
         </p>
-        <a href="#latest" class="cta">Read latest posts</a>
+        <div class="hero-actions">
+          <a href="#latest" class="cta">Read latest posts</a>
+          <a href="admin.html" class="cta cta-outline">✍️ Write a post</a>
+        </div>
       </section>
 
       <section id="featured" class="featured card">
@@ -55,37 +58,16 @@
       <section id="latest">
         <div class="section-head">
           <h2>Latest Posts</h2>
-          <span>Updated weekly</span>
+          <span>Newest first</span>
         </div>
 
-        <div class="post-grid">
-          <article class="post card">
-            <p class="tag">Engineering</p>
-            <h3>Building fast, beautiful static websites</h3>
-            <p>Practical patterns for performance and visual polish without heavyweight frameworks.</p>
-            <a href="#" class="link-arrow">Read post →</a>
-          </article>
-
-          <article class="post card">
-            <p class="tag">Productivity</p>
-            <h3>How I plan deep work weeks</h3>
-            <p>A simple system for balancing maker time, meetings, and creative recovery.</p>
-            <a href="#" class="link-arrow">Read post →</a>
-          </article>
-
-          <article class="post card">
-            <p class="tag">Notes</p>
-            <h3>What “fancy” actually means in UI</h3>
-            <p>Fancy isn’t glitter. It’s clarity, rhythm, contrast, and delight used with restraint.</p>
-            <a href="#" class="link-arrow">Read post →</a>
-          </article>
-        </div>
+        <div id="postGrid" class="post-grid"></div>
       </section>
 
       <section id="about" class="about card">
         <h2>About this site</h2>
         <p>
-          A starter layout for a personal blog on GitHub Pages. Swap these placeholders with your own writing whenever you're ready.
+          A starter layout for a personal blog on GitHub Pages. Use the <strong>Write a post</strong> page to publish quickly.
         </p>
       </section>
     </main>
